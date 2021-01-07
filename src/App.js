@@ -1,19 +1,19 @@
-import React, { useState } from 'react';
 import './App.css';
-import ken from './images/ken.gif';
-import edd from './images/edd.gif';
-import kenBW from './images/kenBW.png';
-import eddBW from './images/eddBW.png';
+import {Switch, Route} from 'react-router-dom';
+import Homepage from './homepage';
+import KenHome from './kenDir/kenHome';
 function App() {
-  const [alive, setAlive] = useState(false);
-  const [aliveK, setAliveK] = useState(false);
+
   return (
-    <div className="homepage">
-      <div className="home-imgs">
-        <img onMouseEnter={() => setAlive(true)}  onMouseLeave={() => setAlive(false)} src={alive? edd : eddBW} alt= "edd" />
-        <img onMouseEnter={() => setAliveK(true)}  onMouseLeave={() => setAliveK(false)} src={aliveK? ken : kenBW} alt="ken" />
-      </div>
-    </div>
+    <Switch>
+      <Route path="/" exact>
+        <Homepage />
+      </Route>
+      <Route path="/ken" exact>
+        <KenHome />
+      </Route>
+
+    </Switch>
   );
 }
 
