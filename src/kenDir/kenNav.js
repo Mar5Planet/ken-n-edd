@@ -6,15 +6,20 @@ const KenNav = () => {
     return (
         <>
             <nav>
-                <a href="#first"><FontAwesomeIcon icon={faUser} /></a>
-                <a href="#second"><FontAwesomeIcon icon={faMusic}/></a>
-                <a href="#third"><FontAwesomeIcon icon={faFile} /></a>
-                <a href="#fourth"><FontAwesomeIcon icon={faPuzzlePiece}/></a>
+                <a href="#first"><FontAwesomeIcon className="fa-icon" icon={faUser} /></a>
+                <a href="#second"><FontAwesomeIcon className="fa-icon" icon={faMusic}/></a>
+                <a href="#third"><FontAwesomeIcon className="fa-icon" icon={faFile} /></a>
+                <a href="#fourth"><FontAwesomeIcon className="fa-icon" icon={faPuzzlePiece}/></a>
             </nav>
-            
             <div class= 'container'> 
-                <section id= 'first'>
                     <div className="ken-1">
+                        
+                    </div>
+                
+                <section id= 'first'>
+                    <div className="ken-about">
+                        <h1>OXA</h1>
+                        <p>Some societies regard a witch as a person with inherent supernatural powers, but in the West witchcraft has been more commonly believed to be an ordinary person's free choice to learn and practice magic with the help of the supernatural.</p>
                     </div>
                 </section>
                 

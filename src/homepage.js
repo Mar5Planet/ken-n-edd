@@ -11,10 +11,12 @@ function Homepage() {
   return (
     <div className="homepage">
       <div className="home-imgs">
-        <img onMouseEnter={() => setAlive(true)}  onMouseLeave={() => setAlive(false)} src={alive? edd : eddBW} alt= "edd" />
+        <Link to="/edd">
+            <img onMouseEnter={() => setAlive(true)}  onMouseLeave={() => setAlive(false)} src={alive? edd : eddBW} alt= "edd" />
+        </Link>
         <Link to="/ken">
             <img onMouseEnter={() => setAliveK(true)}  onMouseLeave={() => setAliveK(false)} src={aliveK? ken : kenBW} alt="ken" />
-        </Link>
+        </Link>     
       </div>
     </div>
   );

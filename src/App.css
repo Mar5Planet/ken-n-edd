@@ -8,6 +8,7 @@
 .homepage {
   height: 100vh;
   width: 100vw;
+  background-color: rgb(26, 26, 26);
 }
 .home-imgs img {
   width: 300px;
@@ -27,6 +28,15 @@
   height: 100vh;
   width: 100vw;
 }
+.ken-about h1 {
+ margin: 5% 65% 0%;
+ font-size: 5rem;
+}
+.ken-about p {
+  margin: 4% 20% 2%;
+  font-size: 2rem;
+  opacity: 0;
+}
 
 .load-1 {
   width: 200px;
@@ -40,13 +50,19 @@
   text-align: center;
 }
 
+.ken-1 {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://wallpapercave.com/wp/wp4586027.jpg);
+}
+
 /* Ken Nav */
 :root {
   --primary-color: #ffdbc5;
   --secondary-color: #423144;
   --complimentary-color: #e7d9ea;
   --contrast-color: #D2A9D9;
-  --light-color: #900d0d;
+  --light-color: #a7c5eb;
   }
   
 .container {
@@ -106,7 +122,10 @@ section:target h1 {
     opacity: 0;
     animation: 2s fadeIn forwards .5s;
 }
-
+section:target p {
+  opacity: 0;
+  animation: 2s fadeIn forwards .5s;
+}
 #first {
   background:var(--primary-color);
 }
@@ -126,6 +145,16 @@ section:target h1 {
     100% { opacity:1 }
 }
 
+nav a:hover {
+  color: rgb(135, 156, 180);
+}
+
+/* Edd */
+.edd-home {
+  background-color: #267a68;
+  height: 100vh;
+  width: 100vw;
+}
 /* Mobile */
 @media (max-width: 500px) {
   .home-imgs img {
