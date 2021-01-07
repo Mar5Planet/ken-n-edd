@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
-
+import ken from './images/ken.gif';
+import edd from './images/edd.gif';
+import kenBW from './images/kenBW.png';
+import eddBW from './images/eddBW.png';
 function App() {
+  const [alive, setAlive] = useState(false);
+  const [aliveK, setAliveK] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="homepage">
+      <div className="home-imgs">
+        <img onMouseEnter={() => setAlive(true)}  onMouseLeave={() => setAlive(false)} src={alive? edd : eddBW} alt= "edd" />
+        <img onMouseEnter={() => setAliveK(true)}  onMouseLeave={() => setAliveK(false)} src={aliveK? ken : kenBW} alt="ken" />
+      </div>
     </div>
   );
 }
