@@ -1,6 +1,7 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser, faMusic, faFile, faPuzzlePiece } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser, faMusic, faFile, faPuzzlePiece } from '@fortawesome/free-solid-svg-icons';
+import Music from './Music';
 
 const KenNav = () => {
     return (
@@ -24,7 +25,7 @@ const KenNav = () => {
                 </section>
                 
                 <section id= 'second'>
-                    <h1>Second</h1>
+                    <Music />
                 </section>
                 
                 <section id= 'third'>

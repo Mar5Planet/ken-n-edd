@@ -5,11 +5,11 @@ import Load4 from '../images/load4.gif';
 const EddHome = () => {
     const [showPage, setShowPage] = useState(false);
 
-    useEffect(() => {
-        setTimeout(() => {
-           setShowPage(true) 
-        }, 3000);
-    }, [])
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //        setShowPage(true) 
+    //     }, 3000);
+    // }, [])
 
     return (
         <div className="ken-main">
