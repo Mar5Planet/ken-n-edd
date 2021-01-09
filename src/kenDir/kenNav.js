@@ -1,18 +1,19 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faMusic, faFile, faPuzzlePiece } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faMusic, faHandSparkles, faPuzzlePiece } from '@fortawesome/free-solid-svg-icons';
 import Music from './Music';
-
+import Deck from './Deck';
+import Matching from './Matching';
 const KenNav = () => {
     return (
         <>
             <nav>
                 <a href="#first"><FontAwesomeIcon className="fa-icon" icon={faUser} /></a>
                 <a href="#second"><FontAwesomeIcon className="fa-icon" icon={faMusic}/></a>
-                <a href="#third"><FontAwesomeIcon className="fa-icon" icon={faFile} /></a>
+                <a href="#third"><FontAwesomeIcon className="fa-icon" icon={faHandSparkles} /></a>
                 <a href="#fourth"><FontAwesomeIcon className="fa-icon" icon={faPuzzlePiece}/></a>
             </nav>
-            <div class= 'container'> 
+            <div className= 'container'> 
                     <div className="ken-1">
                         
                     </div>
@@ -20,7 +21,7 @@ const KenNav = () => {
                 <section id= 'first'>
                     <div className="ken-about">
                         <h1>OXA</h1>
-                        <p>Some societies regard a witch as a person with inherent supernatural powers, but in the West witchcraft has been more commonly believed to be an ordinary person's free choice to learn and practice magic with the help of the supernatural.</p>
+                        <p>“A witch is a woman who emerges from deep within herself. She is a woman who has honestly explored her light and learned to celebrate her darkness. She is a woman who is able to fall in love with the magnificent possibilities of her power. She is a woman who radiates mystery. She is magnetic. She is a witch.”</p>
                     </div>
                 </section>
                 
@@ -29,11 +30,15 @@ const KenNav = () => {
                 </section>
                 
                 <section id= 'third'>
-                <h1>Third</h1>
+                    <div className="tarot-container">
+                        <div className="tarot-cards">
+                            <Deck />
+                        </div>
+                    </div>
                 </section>
                 
                 <section id= 'fourth'>
-                <h1>Fourth</h1>
+                <Matching />
                 </section>
             </div>
         </>

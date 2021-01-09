@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap');
+
+html, body {margin: 0; height: 100%; overflow: hidden}
 .home-imgs {
   position: relative;
   height: 100vh;
@@ -56,6 +58,22 @@
   background-image: url(https://wallpapercave.com/wp/wp4586027.jpg);
 }
 
+/* Matching game */
+.board {
+  margin: 0 5%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr); 
+  column-gap: 2%;
+  row-gap: 2%;
+}
+
+.matching-card img {
+  border-radius: 20px;
+  width: 12vw;
+  height: 20vh;
+}
 /* Ken Music */
 .ken-music-container {
   margin: 0 15%;
@@ -69,6 +87,10 @@
 
 .song img{
   width: 20vw;
+}
+
+.song:hover {
+  cursor: pointer;
 }
 
 /* Ken Nav */

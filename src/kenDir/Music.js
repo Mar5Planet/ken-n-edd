@@ -1,15 +1,18 @@
 import React, {useState} from 'react';
+import useSound from 'use-sound';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faPlayCircle, faPauseCircle} from '@fortawesome/free-solid-svg-icons';
+
 import RihannonImg from '../images/Rhiannon.jpg'
-import useSound from 'use-sound';
-import RihannonAudio from '../images/Rihannon.mp3';
 import Barracuda from '../images/Barracuda.png'
 import Saada from '../images/saada.jpg';
 import Broadcast from '../images/Broadcast.jpg';
-import BarracudaAudio from '../images/Barra.mp3';
-import SaadaAudio from '../images/Saada.mp3';
-import BroadcastAudio from '../images/Broadcast.mp3';
+
+import RihannonAudio from '../audio/Rihannon.mp3';
+import BarracudaAudio from '../audio/Barra.mp3';
+import SaadaAudio from '../audio/Saada.mp3';
+import BroadcastAudio from '../audio/Broadcast.mp3';
 
 const Music = () => {
     const [playingR, setPlayingR] = useState(false);
